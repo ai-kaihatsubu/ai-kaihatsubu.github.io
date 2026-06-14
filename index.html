@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>ツール工房｜無料で使えるWebツール集（文字数・パスワード・画像圧縮・QRほか）</title>
+<meta name="description" content="文字数カウンター・パスワード生成・画像圧縮・QRコード作成など、登録不要・無料のWebツールを多数提供。すべて端末内で処理し安全です。">
+<link rel="canonical" href="https://ai-kaihatsubu.github.io/">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ツール工房｜無料で使えるWebツール集">
+<meta property="og:description" content="文字数カウンター・パスワード生成・画像圧縮・QRコード作成など、登録不要・無料のWebツールを多数提供。すべて端末内で処理し安全です。">
+<meta property="og:url" content="https://ai-kaihatsubu.github.io/">
+<meta property="og:image" content="https://ai-kaihatsubu.github.io/icons/icon-512.svg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2563eb">
+<link rel="icon" href="icons/icon-192.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.svg">
+
+<!-- JSON-LD: WebSite + ItemList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ツール工房",
+  "url": "https://ai-kaihatsubu.github.io/",
+  "description": "毎日の小さな不便を、無料Webツールで解決する。登録不要・ブラウザ内処理のWebツール集。",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ツール工房"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "ツール工房 ツール一覧",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "オールインワン版", "url": "https://ai-kaihatsubu.github.io/tool-suite/" },
+    { "@type": "ListItem", "position": 2, "name": "文字数カウンター", "url": "https://ai-kaihatsubu.github.io/moji-counter/" },
+    { "@type": "ListItem", "position": 3, "name": "パスワード生成", "url": "https://ai-kaihatsubu.github.io/password-generator/" },
+    { "@type": "ListItem", "position": 4, "name": "画像圧縮", "url": "https://ai-kaihatsubu.github.io/image-compressor/" },
+    { "@type": "ListItem", "position": 5, "name": "QRコード作成", "url": "https://ai-kaihatsubu.github.io/qr-code-generator/" },
+    { "@type": "ListItem", "position": 6, "name": "単位変換", "url": "https://ai-kaihatsubu.github.io/unit-converter/" },
+    { "@type": "ListItem", "position": 7, "name": "年齢・日数計算", "url": "https://ai-kaihatsubu.github.io/date-calculator/" },
+    { "@type": "ListItem", "position": 8, "name": "割り勘計算機", "url": "https://ai-kaihatsubu.github.io/warikan-calculator/" },
+    { "@type": "ListItem", "position": 9, "name": "パーセント計算機", "url": "https://ai-kaihatsubu.github.io/percent-calculator/" },
+    { "@type": "ListItem", "position": 10, "name": "カラーコード変換", "url": "https://ai-kaihatsubu.github.io/color-converter/" },
+    { "@type": "ListItem", "position": 11, "name": "タイマー＆ストップウォッチ", "url": "https://ai-kaihatsubu.github.io/timer-stopwatch/" }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- ▼▼ AdSense検証タグをここに貼る（AdSense管理画面の「サイトを追加」で表示される <script async src="...adsbygoogle.js?client=ca-pub-XXXX"...></script> を貼り付け） ▼▼ -->
+<!-- ▲▲ ここまで ▲▲ -->
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-area">
+      <h1 class="logo"><a href="index.html">ツール工房</a></h1>
+      <p class="tagline">毎日の小さな不便を、無料Webツールで解決</p>
+    </div>
+    <nav class="header-actions" aria-label="表示設定">
+      <button id="theme-toggle" type="button" aria-label="ダーク/ライトモード切替" aria-pressed="false">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- AdSense 広告枠（コンテンツ上） -->
+<div class="ad-slot ad-slot--top" data-ad-position="top" aria-hidden="true">
+  <!-- <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+       data-ad-slot="XXXXXXXXXX"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+  <p class="ad-placeholder">広告スペース（準備中）</p>
+</div>
+
+<main id="main" class="container">
+
+  <section class="hero" aria-labelledby="hero-heading">
+    <h2 id="hero-heading">毎日の小さな不便を、無料Webツールで解決</h2>
+    <p>
+      「ツール工房」は、文字数のカウントやパスワードの作成、画像の圧縮、QRコードの生成など、
+      ちょっとした作業をすぐに済ませたいときに使える無料Webツール集です。
+      すべての処理はお使いのブラウザ（端末）内で行われ、入力したデータが外部に送信されることはありません。
+      登録やインストールは不要で、誰でもすぐにお使いいただけます。
+    </p>
+    <ul class="value-list">
+      <li>🔒 端末内処理・データ送信なし</li>
+      <li>🆓 完全無料</li>
+      <li>🚫 会員登録不要</li>
+      <li>📱 スマホ・PC対応</li>
+    </ul>
+  </section>
+
+  <h2 class="section-heading" id="featured-heading">おすすめ</h2>
+  <a class="featured-card" href="https://ai-kaihatsubu.github.io/tool-suite/" aria-labelledby="featured-title">
+    <span class="card-icon" aria-hidden="true">🧩</span>
+    <span class="card-body">
+      <span class="featured-badge">おすすめ</span>
+      <h3 id="featured-title">オールインワン版</h3>
+      <p>文字数カウンター・パスワード生成・QRコード・単位変換など、よく使う複数のツールをタブで切り替えながら使える便利な統合版です。</p>
+    </span>
+  </a>
+
+  <h2 class="section-heading" id="tools-heading">ツール一覧</h2>
+  <div class="tool-grid" role="list" aria-labelledby="tools-heading">
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/moji-counter/">
+      <span class="card-icon" aria-hidden="true">📝</span>
+      <h3>文字数カウンター</h3>
+      <p>文字数・原稿用紙の枚数・X（旧Twitter）の字数を即計算します。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/password-generator/">
+      <span class="card-icon" aria-hidden="true">🔑</span>
+      <h3>パスワード生成</h3>
+      <p>安全な乱数で強力なパスワードを作成し、名前を付けて端末内に保存できます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/image-compressor/">
+      <span class="card-icon" aria-hidden="true">🖼️</span>
+      <h3>画像圧縮</h3>
+      <p>アップロード不要、ブラウザ内で画像を軽量化できます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/qr-code-generator/">
+      <span class="card-icon" aria-hidden="true">🔳</span>
+      <h3>QRコード作成</h3>
+      <p>テキストやURLをQRコードに変換し、PNG/SVGで保存できます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/unit-converter/">
+      <span class="card-icon" aria-hidden="true">📏</span>
+      <h3>単位変換</h3>
+      <p>長さ・重さ・温度など、さまざまな単位を簡単に変換できます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/date-calculator/">
+      <span class="card-icon" aria-hidden="true">📅</span>
+      <h3>年齢・日数計算</h3>
+      <p>満年齢や2つの日付の間の日数、N日後の日付を計算します。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/warikan-calculator/">
+      <span class="card-icon" aria-hidden="true">🧾</span>
+      <h3>割り勘計算機</h3>
+      <p>端数処理や幹事の負担調整に対応した割り勘計算ができます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/percent-calculator/">
+      <span class="card-icon" aria-hidden="true">％</span>
+      <h3>パーセント計算機</h3>
+      <p>割合・割引・増減率など、各種パーセント計算がすぐにできます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/color-converter/">
+      <span class="card-icon" aria-hidden="true">🎨</span>
+      <h3>カラーコード変換</h3>
+      <p>HEX・RGB・HSLの相互変換や、配色のコントラスト比を確認できます。</p>
+    </a>
+
+    <a class="tool-card" role="listitem" href="https://ai-kaihatsubu.github.io/timer-stopwatch/">
+      <span class="card-icon" aria-hidden="true">⏱️</span>
+      <h3>タイマー＆ストップウォッチ</h3>
+      <p>シンプルなタイマー・ストップウォッチに加え、ポモドーロ作業にも対応しています。</p>
+    </a>
+
+  </div>
+
+  <section class="about-box" aria-labelledby="about-heading">
+    <h2 id="about-heading">このサイトについて</h2>
+    <p>
+      「ツール工房」は、日々のちょっとした作業を素早く済ませたい方のために、シンプルで使いやすい無料Webツールを開発・提供しています。
+      各ツールはすべての処理を端末内（ブラウザ上）で行うことで、安心して使えるツールを目指しています。
+    </p>
+    <p>
+      サイトの運営費用は、表示される広告およびアフィリエイトプログラムによる収益でまかなっています。
+      これにより、利用者の方には登録や支払いの手間なく、各ツールを無料でご利用いただけます。
+    </p>
+  </section>
+
+</main>
+
+<!-- AdSense 広告枠（コンテンツ下） -->
+<div class="ad-slot ad-slot--bottom" data-ad-position="bottom" aria-hidden="true">
+  <!-- <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+       data-ad-slot="XXXXXXXXXX"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+  <p class="ad-placeholder">広告スペース（準備中）</p>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <nav aria-label="フッターリンク">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="operator.html">運営者情報</a>
+    </nav>
+    <p class="copyright">&copy; 2026 ツール工房</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+<script>
+  // PWA: Service Worker 登録（相対パスなのでサブパス公開でも scope が正しく効く）
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+  }
+</script>
+</body>
+</html>
