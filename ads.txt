@@ -1,3 +1,1 @@
-# Google AdSense 用 ads.txt
-# TODO: pub-XXXXXXXXXXXXXXXX をAdSense審査承認後に実際のpublisher IDへ差し替える
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-6568622993777242, DIRECT, f08c47fec0942fa0
