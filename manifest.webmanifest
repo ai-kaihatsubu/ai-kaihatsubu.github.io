@@ -1,6 +1,6 @@
 {
-  "name": "ツール工房",
-  "short_name": "ツール工房",
+  "name": "ツール置き場",
+  "short_name": "ツール置き場",
   "description": "毎日の小さな不便を、無料Webツールで解決。文字数カウンターやパスワード生成、画像圧縮、QRコード作成など、登録不要で使える無料Webツール集。",
   "start_url": "./index.html",
   "scope": "./",
