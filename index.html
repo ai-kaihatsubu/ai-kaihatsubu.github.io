@@ -193,6 +193,17 @@
 
 <script src="app.js" defer></script>
 <script>
+  // お布施ボタン → Stripe寄付リンク（金額自由・任意の寄付）
+  (function () {
+    var b = document.getElementById("ofuse-button");
+    if (b) {
+      b.addEventListener("click", function () {
+        window.open("https://donate.stripe.com/9B6cN54Q9ebA01IaYB2Nq00", "_blank", "noopener");
+      });
+    }
+  })();
+</script>
+<script>
   // PWA: Service Worker 登録（相対パスなのでサブパス公開でも scope が正しく効く）
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
